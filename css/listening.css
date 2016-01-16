@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+      
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+      
+.header {
+  background-color: #333;
+}
+
+.nav {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 20px 0;
+}
+
+.nav li {
+  color: #fff;
+  display: inline;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;        
+  font-size: 12px;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+      
+a {
+  color: #fff;
+}
+      
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+      
+.main {
+  font-family: 'Raleway', sans-serif;
+  margin: 0px 0px 20px 20px;
+}
+
+.gallery {
+  width: 100%;
+
+}
+
+.video {
+  background: #fff; /* White */
+  padding-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  margin: 1%;
+  float: left;
+  
+}  
+
+.videoTitle {
+  font-size: 16px;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign up to access an account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+
+    <style>
+      
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 940px;
+        margin: 0 auto;
+      }
+      
+      .jumbotron {
+        /*background: url("cityscene.png") no-repeat center center;*/
+        background-size: cover;
+        height: 800px;
+      }
+      
+      .header {
+        background-color: #333;
+      }
+      
+      .nav {
+        list-style-type: none; /* Removes bullet points */
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .nav li {
+        color: #fff;
+        display: inline;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;        
+        font-size: 12px;
+        margin-right: 25px;
+        text-transform: uppercase;
+      }
+      
+      .main {
+        position: relative;
+        text-align: center;
+      }
+      
+      .main h1 {
+        color: #333;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+      }
+      
+      .btn-primary {
+        background-color: #333;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        padding: 16px 40px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      
+      
+      a {
+        color: #fff;
+      }
+      
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+      }
+
+      .footer p {
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-size: 11px;
+      }
+
+      .signUpForm {
+      	margin: 0 auto;
+      	width: 703px;
+      	height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="index.html">English For Koreans</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="jumbotron">
+        <div class="main">
+        	<form class="signUpForm" action="index_submit" method="get">
+        		<p>Full Name:</p>
+        		<input id="fullname" type="text" name="fullname">
+
+        		<p>Username:</p>
+        		<input id="username" type="text" name="username">
+
+        		<p>Email:</p>
+        		<input id="email" type="email" name="email">
+
+        		<p>Password:<p>
+        		<input id="pw" type="password" name="password">
+
+        		<p>Confirm Password:</p>
+        		<input id="confirmPw" type="password" name="password">
+
+        		<br><br>
+        		<input type="button" onclick="onClickSignup()" value="Sign Up">
+          	</form>
+          	<!--<a class="btn-primary" href="#">Sign Up</a>-->
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="container">
+      </div>
+    </div>
+
+    <!--<script type="text/javascript">
+      //Parse.initialize("31D4grqqykf9DaDyMbzWjmhBbea5vgtVGgWHW7pW", "ejrcLnAAXVGTVSUOtexLG0weUybapOHe2T3aaOsZ");
+    
+      /*var TestObject = Parse.Object.extend("TestObject");
+      var testObject = new TestObject();
+      testObject.save({foo: "bar"}, {
+      success: function(object) {
+        $(".success").show();
+      },
+      error: function(model, error) {
+        $(".error").show();
+      }
+      });*/
+    </script>-->
+
+    <script type="text/javascript" src="../js/signUp.js"></script>
+  </body>
+</html>
