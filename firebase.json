@@ -1,0 +1,9 @@
+{
+  "firebase": "englishforkoreans",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
